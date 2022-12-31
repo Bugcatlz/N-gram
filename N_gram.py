@@ -64,12 +64,12 @@ print("按下CTRL+C來進行結束")
 try:
     while True:
         #使用者須輸入與N-gram相同字元的字詞
-        word = input("請輸入欲查詢的字:")
+        word = input("請輸入欲查詢的字：")
         idx = findWord(text_model_prob,word)
         if idx == -1:
             print("查無此字")
         else:
-            print("最有可能的下一個字與其機率為:")
+            print("最有可能的下一個字與其機率為：")
             l = text_model_prob[idx][1]
             l = sorted(l.items(),key=lambda s:s[1],reverse=True)
             for i in range(min(5,len(l))):
