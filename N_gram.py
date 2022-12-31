@@ -75,6 +75,6 @@ try:
             for i in range(min(5,len(l))):
                 print(l[i][0],":",end=" ")
                 print(l[i][1])
-            
+            print()
 except KeyboardInterrupt:
     print("\n結束")
