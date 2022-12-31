@@ -69,7 +69,7 @@ try:
         if idx == -1:
             print("查無此字")
         else:
-            print("最有可能的下一個字和其機率為:")
+            print("最有可能的下一個字與其機率為:")
             l = text_model_prob[idx][1]
             l = sorted(l.items(),key=lambda s:s[1],reverse=True)
             for i in range(min(5,len(l))):
