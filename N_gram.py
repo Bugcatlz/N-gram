@@ -3,7 +3,7 @@ import re
 def dataPreProcessing(data):
     ProcessedData = re.sub('[：「『《（」』》）]|\[.*?\]', '', data)
     dataReg = re.compile(r'(.*?)[；|，|、|。]+')
-    listProcessedData = dataReg.findall(ProcessedData) #str_sent)
+    listProcessedData = dataReg.findall(ProcessedData)
     return listProcessedData
 
 #N-gram
